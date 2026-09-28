@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Tickets | CineBook</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="booking-page">
+  <header class="topbar">
+    <div class="brand">🎬 CineBook</div>
+    <button id="cancelButton" class="text-button" type="button">Close</button>
+  </header>
+
+  <main class="booking-container">
+    <section class="booking-panel">
+      <p class="eyebrow">YOUR MOVIE PLAN</p>
+      <h1>Book your tickets</h1>
+      <form id="bookingForm">
+        <label for="movie">Movie</label>
+        <select id="movie" name="movie" required>
+          <option value="Space Adventure">Space Adventure</option>
+          <option value="The Last Mission">The Last Mission</option>
+          <option value="Love in the City">Love in the City</option>
+        </select>
+
+        <label for="showtime">Show time</label>
+        <select id="showtime" name="showtime" required>
+          <option value="10:30 AM">10:30 AM</option>
+          <option value="1:45 PM">1:45 PM</option>
+          <option value="6:30 PM">6:30 PM</option>
+          <option value="9:15 PM">9:15 PM</option>
+        </select>
+
+        <label for="tickets">Number of tickets</label>
+        <input id="tickets" name="tickets" type="number" min="1" max="10" value="1" required>
+
+        <div class="price-row">
+          <span>Price per ticket</span><strong>₹180</strong>
+        </div>
+        <div class="price-row total-row">
+          <span>Total</span><strong id="totalPrice">₹180</strong>
+        </div>
+
+        <button class="book-button confirm-button" type="submit">Confirm booking</button>
+      </form>
+      <p id="statusMessage" class="status-message" role="status" aria-live="polite"></p>
+      <p class="note">Demo only. No real ticket or payment is created.</p>
+    </section>
+  </main>
+  <script src="booking.js"></script>
+</body>
+</html>

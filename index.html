@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineBook | Movie Tickets</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🎬 CineBook</div>
+    <span class="tagline">Your movie night starts here</span>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">NOW SHOWING</p>
+      <h1>Find your next movie.</h1>
+      <p>Choose a movie, pick a show, and book your seats in seconds.</p>
+    </section>
+
+    <section class="movie-grid" aria-label="Movies">
+      <article class="movie-card">
+        <div class="poster poster-one"><span>SPACE<br>ADVENTURE</span></div>
+        <div class="movie-info">
+          <h2>Space Adventure</h2><p>Science Fiction · 2h 10m</p>
+          <button class="book-button" data-movie="Space Adventure">Book tickets</button>
+        </div>
+      </article>
+      <article class="movie-card">
+        <div class="poster poster-two"><span>THE LAST<br>MISSION</span></div>
+        <div class="movie-info">
+          <h2>The Last Mission</h2><p>Action · 2h 05m</p>
+          <button class="book-button" data-movie="The Last Mission">Book tickets</button>
+        </div>
+      </article>
+      <article class="movie-card">
+        <div class="poster poster-three"><span>LOVE IN<br>THE CITY</span></div>
+        <div class="movie-info">
+          <h2>Love in the City</h2><p>Romance · 1h 55m</p>
+          <button class="book-button" data-movie="Love in the City">Book tickets</button>
+        </div>
+      </article>
+    </section>
+    <p class="note">Demo project: bookings are not sent to a real cinema and no payment is collected.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
